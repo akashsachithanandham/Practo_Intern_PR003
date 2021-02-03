@@ -10,9 +10,8 @@ This way we can check both functions at the same time to be sure that they give 
 """
 class UnitTest(unittest.TestCase):
     def testGenerate(self):
-        
-        self.assertEqual(verify(1111111111111111) % 10 != 0, True)
-        self.assertEqual(verify(7852010) % 10 == 0, False)
+        self.assertEqual(verify(123456789012345) % 10 == 0, False)
+       # self.assertEqual(verify(785201) % 10 == 0, False)
 
 
 if __name__ == '__main__':
