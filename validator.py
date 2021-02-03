@@ -11,8 +11,9 @@ def verify(ccNumber):
         [integer] -- Sum of the numbers in the credit card. If all 16 digits are entered, it should given a multiple of 10 if the credit card number works.
     """
     #We convert the string that we got in parameter in an array of numbers.
+    intArray = []
     intArray = stringToIntegerArray(ccNumber)
-
+    #print(intArray)
     #We initiate the result variable.
     res = 0
 
@@ -30,4 +31,5 @@ def verify(ccNumber):
 
     #We return the result
     return res
-    
+#print("Hello")
+#print(verify(102300000))
