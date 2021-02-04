@@ -56,6 +56,8 @@ def sum_digits(digit):
 # check number validity
 # check cvv validity
 def validateCvv(cvv):
+    if(len(cvv)!=3):
+        return False
     exp = r'\d{3}'
     if re.search(exp, cvv):
         return True
@@ -108,6 +110,6 @@ if __name__ == "__main__":
     cardNumber = "79927398713"
     cardCvv = "388"
     cardExpiry = "07/21"
-
+    print(validateCvv("125863558888888888888"))
     print("Card Validation ", checkCardValidity(
         cardName, cardNumber, cardCvv, cardExpiry))

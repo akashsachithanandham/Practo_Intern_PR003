@@ -20,7 +20,7 @@ class UnitTest(unittest.TestCase):
         self.assertEqual(verify(424242424242), True)
 
     def testValidateCvv(self):
-        print(validateCvv("314"))
+        print(validateCvv("1678797887"))
         assert validateCvv("314") == True
         assert validateCvv("615") == True
         assert validateCvv("-91") == False
@@ -45,7 +45,7 @@ class UnitTest(unittest.TestCase):
         assert checkCardValidity(
             "Sanjay", "79927391134", "51", "04/23") == False
         assert checkCardValidity(
-            "Buvan", "79927391134", "113", "03/27") == False
+            "Buvan", "79927391134", "113", "03/27") == True
         
 if __name__ == '__main__':
     unittest.main()
