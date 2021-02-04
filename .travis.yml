@@ -2,7 +2,7 @@ language: python
 python:
   - "3.8"
 install:
-  -pip install coveralls
+  pip install coveralls
 script:
   - python unit_test.py
   - covarage run unit_test.py
