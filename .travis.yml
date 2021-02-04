@@ -7,3 +7,4 @@ script:
   - python unit_test.py
   - coverage run --source=home unit_test.py
 
+after_success: coveralls
