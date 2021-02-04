@@ -33,3 +33,4 @@ def verify(ccNumber):
     return res
 #print("Hello")
 #print(verify(102300000))
+print(verify(424242424242))
