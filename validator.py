@@ -30,7 +30,8 @@ def verify(ccNumber):
             res += intArray[i]
 
     #We return the result
-    return res
+    res = res%10
+    return res==0
 #print("Hello")
 #print(verify(102300000))
 print(verify(424242424242))
