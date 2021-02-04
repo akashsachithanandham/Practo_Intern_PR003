@@ -5,5 +5,5 @@ install:
   - pip install coveralls
 script:
   - python unit_test.py
-  - covarage run unit_test.py
+  
 
